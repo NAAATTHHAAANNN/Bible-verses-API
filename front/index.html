@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Orthodox Christian</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f4f1ea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: sans-serif;
+        }
+
+        .orthodox-container {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            height: 380px;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .orthodox-content h1 {
+            font-size: 24px;
+            color: #b8860b;
+            margin-bottom: 15px;
+        }
+
+        .orthodox-content p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .orthodox-icon img {
+            width: 80px;
+            height: auto;
+        }
+
+        .bible-verse-container {
+            margin-top: 20px;
+        }
+
+        .bible-verse-container p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .bible-verse-container button {
+            background-color: #b8860b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .bible-verse-container button:hover {
+            background-color: #d4a017;
+        }
+        #verse{
+            height: 130px;
+            width: 100%;
+        }
+        img {
+        filter: drop-shadow(5px 5px 10px yellow); /* X-offset, Y-offset, blur-radius, color */
+        }
+    </style>
+</head>
+<body>
+    <section class="orthodox-container">
+        <div class="orthodox-content">
+            <h1>Bible Verses</h1>
+        </div>
+        <div class="orthodox-icon">
+            <img src="images/christian_cross_PNG10.png" alt="Orthodox Cross Icon">
+        </div>
+
+        <!-- Bible Verse Section -->
+        <div class="bible-verse-container">
+            <p id="verse">Loading verse...</p>
+            <button onclick="getRandomVerse()">Get Another Verse</button>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
